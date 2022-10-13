@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Authors>Event Horizon development team</Authors>
+		<Company>Event Horizon</Company>
+		<Version>1.0.0</Version>
+		<PackageId>Event.Horizon.Operations.Resulting</PackageId>
+		<Product>Event.Horizon.Operations.Resulting</Product>
+		<Description>Code library for Event Horizon applications</Description>
+		<Copyright>Copyright © 2022</Copyright>
+		<AssemblyName>Hrz.Operations.Resulting</AssemblyName>
+		<RootNamespace>Event.Horizon.Operations.Resulting</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RepositoryUrl>https://github.com/lucasRafaell95/hrz-operations-resulting</RepositoryUrl>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+</Project>
