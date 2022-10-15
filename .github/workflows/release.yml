@@ -1,4 +1,4 @@
-name: Hrz.Operations.Resulting.Release-CI
+name: Hrz.Operations.Resulting.Release-CD
 
 on:
   push:
