@@ -2,10 +2,11 @@
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
+		<Title>EventHorizon.Operations.Resulting</Title>
 		<Authors>Event Horizon development team</Authors>
 		<Company>Event Horizon</Company>
 		<Version>1.0.0</Version>
-		<PackageId>Event.Horizon.Operations.Resulting</PackageId>
+		<PackageId>EventHorizon.Operations.Resulting</PackageId>
 		<Product>Event.Horizon.Operations.Resulting</Product>
 		<Description>Code library for Event Horizon applications</Description>
 		<Copyright>Copyright © 2022</Copyright>
@@ -13,10 +14,22 @@
 		<RootNamespace>Event.Horizon.Operations.Resulting</RootNamespace>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<PackageTags>Operation;Resulting</PackageTags>
 		<RepositoryUrl>https://github.com/lucasRafaell95/hrz-operations-resulting</RepositoryUrl>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\LICENSE">
+		<Pack>True</Pack>
+		<PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>
