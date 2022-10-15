@@ -1,4 +1,4 @@
-name: Hrz.Operations.Resulting.Release-CD
+name: Hrz.Operations.Resulting-CD
 
 on:
   push:
@@ -8,7 +8,7 @@ env:
   NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
   NUGET_API_URL: ${{ secrets.NUGET_API_URL }}
 
-  PROJECT_FILE_PATH: './Hrz.Operations.Resulting/Hrz.Operations.Resulting.csproj'    
+  PROJECT_FILE_PATH: 'src/Hrz.Operations.Resulting/Hrz.Operations.Resulting.csproj'
 
 jobs:
   build:
@@ -22,6 +22,7 @@ jobs:
 
   Publish:
     name: Publishing application
+    needs: [ build, test ]
     runs-on: ubuntu-latest
 
     steps:
