@@ -34,7 +34,7 @@ jobs:
         dotnet-version: 6.0.x
 
     - name: Creating project package
-      run: dotnet pack $PROJECT_FILE_PATH --configuration Release -o out
+      run: dotnet pack $PROJECT_FILE_PATH --configuration Release -o nupkg
 
     - name: Publishing package on Nuget
-      run: dotnet nuget push *.nupkg --source $NUGET_API_URL --skip-duplicate --api-key $NUGET_API_KEY
+      run: dotnet nuget push ./nupkg/*.nupkg --source $NUGET_API_URL --skip-duplicate --api-key $NUGET_API_KEY
